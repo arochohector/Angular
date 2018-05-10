@@ -1,0 +1,21 @@
+
+<i class="glyphicon " 
+
+    [ngClass]="{
+        'glyphicon-star': isSelected,
+        'glyphicon-star-empty': !isSelected
+    }"
+    (click)="onClick()"
+    >
+</i>
+<button
+    [ngStyle]="{
+        'backgroundColor': canSave ? 'blue' : 'gray',
+        'color': canSave ? 'white' : 'black'
+    }"
+>
+    Button
+</button>
+<!-- ngClass module -->
+<!-- [class.glyphicon-star]="isSelected" 
+[class.glyphicon-star-empty]="!isSelected"  -->

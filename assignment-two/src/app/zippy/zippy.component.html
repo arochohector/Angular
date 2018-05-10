@@ -1,0 +1,25 @@
+<!-- <ul class="nav nav-stacked col-md12">
+  <li (click)="onClick()" [class.active]="isClicked">
+      {{ title }}
+      <i class="pull-right glyphicon"
+      [ngClass]="{
+        'glyphicon-chevron-down': !isClicked,
+        'glyphicon-chevron-up': isClicked
+      }" ></i>
+      <div *ngIf="isClicked">Showing content</div>
+  </li>
+</ul> -->
+
+<div class="zippy">
+  <div class="zippy-heading" [class.expanded]="isClicked" (click)="onClick()">
+    {{ title }}
+    <i class="pull-right glyphicon"
+    [ngClass]="{
+      'glyphicon-chevron-down': !isClicked,
+      'glyphicon-chevron-up': isClicked
+    }" ></i>
+  </div>
+  <div class="zippy-body" *ngIf="isClicked">
+    <ng-content></ng-content>
+  </div>
+</div>

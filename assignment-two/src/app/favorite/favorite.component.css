@@ -1,0 +1,13 @@
+
+i{
+    font-size: 3.0em;
+    padding-top:75px;
+}
+
+i:hover{
+    cursor: pointer;
+}
+
+.glyphicon{
+    color:red;
+}

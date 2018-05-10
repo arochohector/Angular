@@ -1,0 +1,30 @@
+li:hover{
+    cursor: pointer;
+}
+
+li{
+    padding:20px;
+    border: solid 1px #aaaaaa;
+}
+
+.active{
+    background-color: rgb(241, 238, 238);
+}
+
+.zippy{
+    border:1px solid #ccc;
+}
+
+.zippy-heading{
+    font-weight: bold;
+    padding:20px;
+    cursor:pointer;
+}
+
+.zippy-body{
+    padding:20px;
+}
+
+.expanded{
+    background-color:#f0f0f0;
+}
