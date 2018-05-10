@@ -1,0 +1,8 @@
+<div class="container">
+  <h1>{{ title }}</h1>
+  <p>{{ tweet.body }}</p>
+  <like [likesCount]="tweet.likesCount"
+        [isLiked]="tweet.isLike"
+  ></like>  
+</div>
+<!-- (click)="onLikeClick($event)" -->
